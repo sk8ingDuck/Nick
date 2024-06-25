@@ -30,7 +30,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.md-5:bungeecord-chat:1.12-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
-    <orderEntry type="library" name="Maven: dev.iiahmed:ModernDisguise:2.9" level="project" />
+    <orderEntry type="library" name="Maven: dev.iiahmed:ModernDisguise:3.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.nametagedit:nametagedit:4.5.23" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.NEZNAMY:TAB-API:4.1.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jetbrains:annotations:24.1.0" level="project" />

@@ -80,8 +80,9 @@
         </repository>
 
         <repository>
-            <id>gravemc-repo</id>
-            <url>https://repo.gravemc.net/releases/</url>
+            <id>gravemc-repo-snapshots</id>
+            <name>GraveMC Repository</name>
+            <url>https://repo.gravemc.net/snapshots</url>
         </repository>
 
         <repository>
@@ -123,7 +124,7 @@
         <dependency>
             <groupId>dev.iiahmed</groupId>
             <artifactId>ModernDisguise</artifactId>
-            <version>2.9</version>
+            <version>3.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 

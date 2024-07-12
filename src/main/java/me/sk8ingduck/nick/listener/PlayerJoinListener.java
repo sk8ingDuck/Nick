@@ -52,6 +52,9 @@ public class PlayerJoinListener implements Listener {
 							.replaceAll("%PREFIX%", nickManager.getFakePrefix(player))
 							.replaceAll("%NAME%", nickName)),
 					10L);
+			Nickname finalNick = nick;
+			Bukkit.getScheduler().scheduleSyncDelayedTask(Nick.getInstance(),
+					() -> nickManager.nick(player, finalNick), 10L);
 		} else {
 			player.sendMessage(messagesConfig.get("nick.unsuccessful." + response.toString().toLowerCase()));
 		}

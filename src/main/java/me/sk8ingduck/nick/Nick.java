@@ -57,7 +57,7 @@ public final class Nick extends JavaPlugin {
 
 		if (getPluginManager().isPluginEnabled("TAB")) {
 			getServer().getConsoleSender().sendMessage("§a[Nick] TAB Plugin found! Initializing Nick with TAB...");
-			if (getPluginManager().isPluginEnabled("LuckPerms")) {
+			if (!getPluginManager().isPluginEnabled("LuckPerms")) {
 				getServer().getConsoleSender().sendMessage("§c[Nick] LuckPerms was not found! " +
 						"Please install LuckPerms if you want to use Nick with TAB.");
 				getPluginManager().disablePlugin(this);

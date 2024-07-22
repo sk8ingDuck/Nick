@@ -3,6 +3,7 @@ package me.sk8ingduck.nick;
 import dev.iiahmed.disguise.DisguiseManager;
 import dev.iiahmed.disguise.DisguiseProvider;
 import me.sk8ingduck.nick.command.NickCommand;
+import me.sk8ingduck.nick.command.UnnickCommand;
 import me.sk8ingduck.nick.config.DBConfig;
 import me.sk8ingduck.nick.config.MessagesConfig;
 import me.sk8ingduck.nick.config.SettingsConfig;
@@ -82,6 +83,7 @@ public final class Nick extends JavaPlugin {
 		messagesConfig = new MessagesConfig("messages.yml", getDataFolder());
 
 		getCommand("nick").setExecutor(new NickCommand());
+		getCommand("unnick").setExecutor(new UnnickCommand());
 
 		getPluginManager().registerEvents(new PlayerJoinListener(), this);
 		getPluginManager().registerEvents(new PlayerQuitListener(), this);

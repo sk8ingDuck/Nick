@@ -1,5 +1,5 @@
 name: Nick
-version: '2.1'
+version: '2.2'
 main: me.sk8ingduck.nick.Nick
 authors: [ sk8ingDuck ]
 
@@ -12,3 +12,6 @@ commands:
   nick:
     description: nick yourself
     usage: /nick
+  unnick:
+    description: unnick yourself
+    usage: /unnick

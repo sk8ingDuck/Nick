@@ -24,7 +24,10 @@ public class MessagesConfig extends Config {
 						+ "&a/nick <player> <nick> &7- Nick other player (with given nick)\n"
 						+ "&a/nick <player> <group> &7- Nick other player (with given group)\n"
 						+ "&a/nick <player> <group> <nick> &7- Nick other player (nick/group)\n\n"
+						+ "&a/unnick &7- Unnick yourself\n"
+						+ "&a/unnick <player> &7- Unnick other player\n\n"
 						+ "&8&m----------------------&r&e« Nick »&8&m----------------------");
+
 
 		msgs.put("nick.noperms", "&cYou don't have permission to do that.");
 		msgs.put("nick.cooldown", "&cPlease wait another %REMAINING% Seconds before using this command.");
@@ -43,6 +46,9 @@ public class MessagesConfig extends Config {
 
 		msgs.put("unnick.successful.self", "&aUnnicked!");
 		msgs.put("unnick.successful.other", "&aUnnicked %PLAYER%!");
+		msgs.put("unnick.notnick", "&cYou are not nicked!");
+		msgs.put("unnick.other.notnick", "&c%PLAYER% is not nicked!");
+		msgs.put("unnick.other.notonline", "&c%PLAYER% is not online!");
 		msgs.put("unnick.unsuccessful.fail_version_not_supported", "&cFailed to nick: unsupported MC version");
 		msgs.put("unnick.unsuccessful.fail_already_undisguised", "&cFailed to nick: player not nicked");
 		msgs.put("unnick.unsuccessful.fail_profile_not_found", "&cFailed to nick: reflections failed to get the player's GameProfile");

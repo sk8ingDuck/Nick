@@ -46,7 +46,8 @@ public final class Nick extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 
-		DisguiseManager.setPlugin(this);
+		// Entity disguises are enabled, but not used in this plugin.
+		DisguiseManager.initialize(this, true);
 		ConfigurationSerialization.registerClass(Group.class);
 
 		DBConfig dbConfig = new DBConfig("database.yml", getDataFolder());
